@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VedicPath</title>
+    <link rel="icon" type="image/png" href="/images/om.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saffron: {
+                50: "#fff8f1",
+                100: "#ffefdb",
+                200: "#ffdab0",
+                300: "#ffbf7d",
+                400: "#ff9a42",
+                500: "#fe7c12",
+                600: "#ef5e07",
+                700: "#c64306",
+                800: "#9d350e",
+                900: "#7e2e0f",
+              },
+              maroon: {
+                800: "#800000",
+                900: "#580000",
+              },
+              gold: {
+                400: "#FFD700",
+                500: "#DAA520",
+                600: "#B8860B",
+              },
+              midnight: {
+                800: "#2c3e50",
+                900: "#192231",
+              },
+            },
+            fontFamily: {
+              serif: ["Lora", "serif"],
+              display: ["Cinzel", "serif"],
+            },
+            backgroundImage: {
+              "mandala-pattern":
+                "url('https://www.transparenttextures.com/patterns/black-scales.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Lora", serif;
+        background-color: #fff8f1;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjREFBNTIwIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMiIgcj0iMS41IiBmaWxsPSIjREFBNTIwIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iMTgiIHI9IjEuNSIgZmlsbD0iI0RBQTUyMCIgZmlsbC1vcGFjaXR5PSIwLjIiLz48Y2lyY2xlIGN4PSIyIiBjeT0iMTAiIHI9IjEuNSIgZmlsbD0iI0RBQTUyMCIgZmlsbC1vcGFjaXR5PSIwLjIiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjEwIiByPSIxLjUiIGZpbGw9IiNEQUE1MjAiIGZpbGwtbvcGFjaXR5PSIwLjIiLz48L3N2Zz4");
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Cinzel", serif;
+      }
+      .ornate-border {
+        border: 2px solid #daa520;
+        outline: 1px solid #800000;
+        outline-offset: 4px;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://esm.sh/react@^19.2.4/",
+          "react": "https://esm.sh/react@^19.2.4",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+          "recharts": "https://esm.sh/recharts@^3.7.0",
+          "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+          "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+          "d3": "https://esm.sh/d3@^7.9.0"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
